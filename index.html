@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +10,28 @@
 </head>
 <body>
   <main>
-    <h1>🎉 xWordPress.ir</h1>
-    <p>وب‌سایت شما اکنون به‌عنوان یک PWA آماده است.</p>
-    <button onclick="installApp()">نصب اپلیکیشن</button>
+    <h1>Welcome to xWordPress.ir</h1>
+    <p>Your website is now ready as a Progressive Web App (PWA).</p>
+    <button onclick="installApp()">Install App</button>
   </main>
   <script src="app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(() => console.log("SW registered"));
+      navigator.serviceWorker.register('sw.js').then(() => console.log("Service Worker registered"));
     }
+
     let deferredPrompt;
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       deferredPrompt = e;
     });
+
     function installApp() {
       if (deferredPrompt) {
         deferredPrompt.prompt();
-        deferredPrompt.userChoice.then(() => deferredPrompt = null);
+        deferredPrompt.userChoice.then(() => {
+          deferredPrompt = null;
+        });
       }
     }
   </script>
