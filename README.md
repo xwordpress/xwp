@@ -1,17 +1,17 @@
 # xWordPress.ir
 
-💡 **xWordPress** یک پروژه متن‌باز برای تبدیل ساده‌ترین صفحات HTML به اپلیکیشن وب (PWA) است، به‌صورت ۱۰۰٪ رایگان و میزبانی شده روی GitHub Pages + Cloudflare CDN.
+💡 **xWordPress** is an open-source project designed to turn the simplest HTML pages into fully installable Progressive Web Apps (PWAs) — 100% free and hosted via GitHub Pages + Cloudflare CDN.
 
-## 🚀 ویژگی‌ها:
+## 🚀 Features:
 
-- PWA با قابلیت نصب (Add to Home Screen)
-- کش کامل و عملکرد آفلاین با Service Worker
-- طراحی سبک و واکنش‌گرا
-- میزبانی بدون هزینه روی GitHub Pages
-- دامنه سفارشی از طریق فایل CNAME
-- بهینه‌سازی برای ترافیک سنگین با Cloudflare CDN
+- Installable PWA (Add to Home Screen)
+- Full offline support with Service Worker
+- Lightweight, responsive design
+- Free static hosting via GitHub Pages
+- Custom domain support using a CNAME file
+- Optimized for high traffic with Cloudflare CDN
 
-## 🛠 ساختار پروژه:
+## 🛠 Project Structure:
 
 ```
 📁 public/
@@ -24,13 +24,13 @@
 ├── CNAME
 ```
 
-## 🧩 نحوه راه‌اندازی:
+## 🧩 How to Set Up:
 
-۱. فورک یا کلون پروژه  
-۲. دامنه خود را در `CNAME` وارد کنید  
-۳. فعال‌سازی GitHub Pages در تنظیمات پروژه  
-۴. اتصال دامنه به GitHub از طریق Cloudflare
+1. Fork or clone the repository  
+2. Add your custom domain to the `CNAME` file  
+3. Enable GitHub Pages in the repository settings  
+4. Connect your domain to GitHub via Cloudflare
 
-## ☁️ نویسنده:
+## ☁️ Author:
 [🎨 xWordPress.ir](https://xwordpress.ir)  
 📧 xwordpress.ir@gmail.com
